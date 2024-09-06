@@ -1,0 +1,178 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+ --ff-primary: "Poppins", sans-serif;
+ --text-color: #303030;
+
+ --hue: 194;
+ --primary-color: hsl(var(--hue), 100%, 63%);
+}
+
+body{
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgb(250,254,255);
+}
+
+body *{
+  font-family: var(--ff-primary);
+}
+
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app{
+  padding: 2rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2.5rem 0;
+}
+
+header h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.search{
+  display:flex;
+  align-items: center;
+}
+
+.search input{
+  width: 46.2rem;
+  height: 4.8rem;
+  margin-right: 0.8rem;
+  padding: 0 .8rem;
+  background-color: #06181C;
+  border: none;
+  color:white;
+}
+
+.search button{
+  background-color: black;
+  border-radius: 0 .4rem .4rem 0;
+  height: 3.2rem;
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+  margin-bottom: 1.6rem;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+
+  box-shadow: 0 1rem 2rem -1rem rgba(0,0,0,0.3);
+}
+
+table *{
+  font-size: 1.4rem;
+  color: white;
+}
+
+table th{
+  background: #092D38;
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+
+table th:first-child{
+  border-top-left-radius: .4rem;
+}
+
+table th:last-child{
+  border-top-right-radius: .4rem;
+}
+
+table tr:nth-child(odd) {
+  background: #06161B;
+}
+
+table tr:nth-child(even){
+  background: #254147;
+}
+
+table td{
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+td.user img{
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a{
+  text-decoration: none;
+}
+
+td.user a p{
+  font-weight: bold;
+}
+
+td .remove{
+  background: none;
+  border: none;
+  color: #F75A68;
+  cursor: pointer;
+}
+
+th{
+  color: white;
+}
+body{
+  background-color: black;
+}
+
+.none{
+  display:flex;
+  border: 1px solid #4A808C;
+  width: 1080px;
+  height: 624px;
+  color: #4E5455;
+  align-items: center;
+  justify-content: center;
+  gap:6rem;
+
+}
+
+
+
